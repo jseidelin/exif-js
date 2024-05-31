@@ -431,7 +431,7 @@
             length = file.byteLength,
             marker;
 
-        while (offset < length) {
+        while (offset + 5 < length) {
             if (dataView.getUint8(offset) != 0xFF) {
                 if (debug) console.log("Not a valid marker at offset " + offset + ", found: " + dataView.getUint8(offset));
                 return false; // not a valid marker, something is wrong
