@@ -44,7 +44,7 @@ The tag names to use are listed in `EXIF.Tags` in `exif.js`.
 **Important**: Note that you have to wait for the image to be completely loaded, before calling `getData` or any other function. It will silently fail otherwise.
 You can implement this wait, by running your exif-extracting logic on the `window.onLoad` function. Or on an image's own `onLoad` function.
 For jQuery users please note that you can NOT (reliably) use jQuery's `ready` event for this. Because it fires before images are loaded.
-You could use $(window).load() instead of $(document.ready() (please note that `exif-js has NO dependency on jQuery or any other external library). 
+You could use `$(window).load()` instead of `$(document).ready()` (please note that `exif-js` has NO dependency on jQuery or any other external library). 
  
 **JavaScript**:
 ```javascript
